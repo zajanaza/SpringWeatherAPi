@@ -1,5 +1,6 @@
 package cz.wz.austra.controller;
 
+import cz.wz.austra.City;
 import cz.wz.austra.connector.WeatherApiConnector;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,8 +14,9 @@ public class WeatherController {
   }
   @RequestMapping("/weather/{city}")
   String getWeatherForCity(@PathVariable("city") String city){
+    City cityEnum = City.valueOf(city.toUpperCase());
     WeatherApiConnector connector = new WeatherApiConnector();
-    return connector.getWeatherForCity(city);
+    return connector.getWeatherForCity(cityEnum);
 
   }
 }

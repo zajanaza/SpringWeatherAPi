@@ -1,5 +1,6 @@
 package cz.wz.austra.connector;
 
+import cz.wz.austra.City;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 import java.net.URI;
@@ -13,13 +14,12 @@ public class WeatherApiConnector {
   private static String APIKey = "key=61f76c71e11549e3bdd100033231312";
   private static String url = baseUrl + urlParameters + APIKey + "&q=";
   //private static String url = "https://api.weatherapi.com/v1/current.json?key=61f76c71e11549e3bdd100033231312&q=Inari&aqi=no";
-  public String getWeatherForCity(String city)  {
+  public String getWeatherForCity(City city)  {
     RestTemplate template = new RestTemplate();
     URI uri = null;
     try {
-      uri = new URI(url + city);
+      uri = new URI(url + city.toString());
     } catch (URISyntaxException e) {
-      //throw new RuntimeException(e);
       e.printStackTrace();
     }
     ResponseEntity<String> responseEntity = template.getForEntity(uri, String.class);
