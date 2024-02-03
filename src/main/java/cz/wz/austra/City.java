@@ -6,5 +6,9 @@ public enum City {
   SOKOLOV,
   SYDNEY,
   OTTAWA,
+  OSTRAVA,
+  CITICE,
+  SCHONEBEN,
+  REYKJAVIK
 
 }
