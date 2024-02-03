@@ -9,6 +9,7 @@ public enum City {
   OSTRAVA,
   CITICE,
   SCHONEBEN,
-  REYKJAVIK
+  REYKJAVIK,
+  BARCELONA
 
 }
