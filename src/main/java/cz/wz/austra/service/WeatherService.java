@@ -25,6 +25,8 @@ public class WeatherService {
     weatherDto.setRel_humidity(weatherApiDto.getCurrent().getHumidity());
     weatherDto.setWind_direction(weatherApiDto.getCurrent().getWind_dir());
     weatherDto.setWeather_description(weatherApiDto.getCurrent().getCondition().getText());
+    weatherDto.setFeelslike_c(weatherApiDto.getCurrent().getFeelslike_c());
+    weatherDto.setWeather_icon(weatherApiDto.getCurrent().getCondition().getIcon());
     return weatherDto;
   }
 }

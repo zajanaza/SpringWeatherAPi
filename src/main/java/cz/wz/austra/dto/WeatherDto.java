@@ -8,7 +8,12 @@ public class WeatherDto {
   private int rel_humidity;
   private String wind_direction;
   private String weather_description;
-
+  private double feelslike_c;
+  private String weather_icon;
+  public String getWeather_icon() { return weather_icon; }
+  public void setWeather_icon(String weather_icon) { this.weather_icon = weather_icon; }
+  public double getFeelslike_c() { return feelslike_c; }
+  public void setFeelslike_c(double feelslike_c) { this.feelslike_c = feelslike_c; }
   public String getLocation() {
     return location;
   }

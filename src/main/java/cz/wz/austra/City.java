@@ -1,15 +1,22 @@
 package cz.wz.austra;
 
 public enum City {
-  PRAHA,
   MADRID,
+  BARCELONA,
+  BILBAO,
+  GIJON,
+  LEON,
+  LOGRONO,
+  MALAGA,
+  MURCIA,
+  SEGOVIA,
+  SEVILLA,
+  TARIFA,
+  VALENCIA,
+  FARO,
+  OPORTO,
+  LISBOA,
+  PRAHA,
   SOKOLOV,
-  SYDNEY,
-  OTTAWA,
-  OSTRAVA,
-  CITICE,
-  SCHONEBEN,
-  REYKJAVIK,
-  BARCELONA
-
+  LONDON
 }
